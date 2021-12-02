@@ -1,0 +1,41 @@
+class patient:
+    def __init__(self, name, age, NeworOld):
+        self.name = name
+        self.age = age
+        self.NeworOld = NeworOld
+        
+        
+
+from patient import patient
+
+patient.name = input("What is your name?: ")
+patient.age = input("What is your age?: ")
+
+patient.NeworOld= input("Are you a new or old student?: Y for New, N for Old: ")
+
+print("Hello, " + patient.name)
+print("You are " + patient.age)
+
+if patient.NeworOld == 'y' or 'Y':
+    print("You are a new Student, Welcome! ")
+else:
+    print("Welcome Back! ")
+    
+    
+    
+    
+--------------------------------------------------------------------------------------
+
+class weightCalc:
+    def __init__ (self, weight):
+        self.weight = weight
+
+from weightCalc import weightCalc
+
+weightCalc.weight = input("What is your weight in lbs?: ")
+weight_in_kilos = float(weightCalc.weight) * 0.453592
+
+msg = f'Your weight in Kilos is {weight_in_kilos}'
+print(msg)
+print("Your weight in Kilos is: " + str(weight_in_kilos))
+
